@@ -593,6 +593,24 @@ get_header();
   </div>
   <!-- End Expolre Product Area  -->
 
+  <div class="axil-newsletter-area axil-section-gap pt--0">
+    <div class="container">
+      <div class="etrade-newsletter-wrapper bg_image bg_image--5" style="background-image: url(<?php echo get_template_directory_uri() . '/img/partials/madtown/madgirl.jpeg'; ?>);">
+        <div class="newsletter-content">
+          <span class="title-highlighter highlighter-primary2"><i class="fas fa-envelope-open"></i>Newsletter</span>
+          <h2 class="title mb--40 mb_sm--30">Get weekly update</h2>
+          <div class="input-group newsletter-form">
+            <div class="position-relative newsletter-inner mb--15">
+              <input placeholder="example@gmail.com" type="text" control-id="ControlID-17">
+            </div>
+            <button type="submit" class="axil-btn mb--15" control-id="ControlID-18">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End .container -->
+  </div>
+
   <div class="axil-poster">
     <div class="container">
       <div class="row">
@@ -630,23 +648,7 @@ get_header();
     </div>
   </div>
 
-  <div class="axil-newsletter-area axil-section-gap pt--0">
-    <div class="container">
-      <div class="etrade-newsletter-wrapper bg_image bg_image--5" style="background-image: url(<?php echo get_template_directory_uri() . '/img/partials/youngster/photoshoting/boylookup.jpg'; ?>);">
-        <div class="newsletter-content">
-          <span class="title-highlighter highlighter-primary2"><i class="fas fa-envelope-open"></i>Newsletter</span>
-          <h2 class="title mb--40 mb_sm--30">Get weekly update</h2>
-          <div class="input-group newsletter-form">
-            <div class="position-relative newsletter-inner mb--15">
-              <input placeholder="example@gmail.com" type="text" control-id="ControlID-17">
-            </div>
-            <button type="submit" class="axil-btn mb--15" control-id="ControlID-18">Subscribe</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End .container -->
-  </div>
+
 
   <!-- Start Testimonila Area  -->
   <div class="axil-testimoial-area axil-section-gap bg-vista-white">
