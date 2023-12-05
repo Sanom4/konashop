@@ -1,17 +1,17 @@
-# Ignore everything
-/*
-
-# Don't ignore the .gitignore file
-!.gitignore
-
-# Don't ignore the wp-content directory, but ignore everything inside it
-!wp-content/
-wp-content/*
-
-# Don't ignore the konaboot theme and everything inside it
-!wp-content/themes/konastore/
-!wp-content/themes/konastore/*
-
-# Don't ignore the konaplugin plugin and everything inside it
-!wp-content/plugins/konaplugin/
-!wp-content/plugins/konaplugin/*
+/*.php
+/*.html
+/*.txt
+wp-config.php
+/wp-content/index.php
+/wp-content/plugins/*
+!/wp-content/plugins/playsmart*
+/wp-admin/*
+/wp-includes/*
+/wp-content/uploads/*
+/wp-content/themes/*
+!/wp-content/themes/konastore*
+#!/wp-content/themes/w4_base*
+#/wp-content/languages/*
+/robots.txt
+.htaccess
+#/.idea/*
