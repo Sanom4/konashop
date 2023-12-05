@@ -1,21 +1,17 @@
-# Ignore everything in the root directory
-!.gitignore
+# Ignore everything
 /*
-wp-config.php
-wp-config.php
+
 # Don't ignore the .gitignore file
+!.gitignore
 
-
-
-
-#  ignore PHP files in the root directory
-*.php
-
-#  ignore the wp-admin directory
-wp-admin/
-
-# Don't ignore the wp-content directory and its subdirectories
+# Don't ignore the wp-content directory, but ignore everything inside it
+!wp-content/
 wp-content/*
+
+# Don't ignore the konaboot theme and everything inside it
 !wp-content/themes/konaboot/
 !wp-content/themes/konaboot/*
-wp-content/plugins/*
+
+# Don't ignore the konaplugin plugin and everything inside it
+!wp-content/plugins/konaplugin/
+!wp-content/plugins/konaplugin/*
