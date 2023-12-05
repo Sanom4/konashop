@@ -367,7 +367,11 @@ get_header();
       <div class="row">
         <div class="col-lg-12 mb--30">
           <div class="single-poster">
-            <a href="<?php echo get_term_link('madtown', 'product_tag');
+            <a href="<?php
+                      $term_link = get_term_link('madtown', 'product_tag');
+                      if (!is_wp_error($term_link)) {
+                        echo esc_url($term_link);
+                      }
                       ?>">
               <img src="<?php echo get_template_directory_uri() . '/img/partials/madtown/madgroup.jpeg'; ?>" alt="eTrade promotion poster">
               <div class="poster-content content-left">
@@ -392,7 +396,11 @@ get_header();
       <div class="row">
         <div class="col-lg-6 mb--30">
           <div class="single-poster">
-            <a href="<?php echo get_term_link('youngster', 'product_tag');
+            <a href="<?php
+                      $term_link = get_term_link('youngster', 'product_tag');
+                      if (!is_wp_error($term_link)) {
+                        echo esc_url($term_link);
+                      }
                       ?>">
               <img src="<?php echo get_template_directory_uri() . '/img/partials/youngster/photoshoting/konawide.jpg'; ?>" alt="eTrade promotion poster">
               <div class="poster-content content-left">
@@ -409,7 +417,11 @@ get_header();
         </div>
         <div class="col-lg-6 mb--30">
           <div class="single-poster">
-            <a href="<?php echo get_term_link('childhood-memories', 'product_tag');
+            <a href="<?php
+                      $term_link = get_term_link('childhood-memories', 'product_tag');
+                      if (!is_wp_error($term_link)) {
+                        echo esc_url($term_link);
+                      }
                       ?>">
               <img src="<?php echo get_template_directory_uri() . '/img/partials/youngster/photoshoting/girlbuff.jpg'; ?>" alt="eTrade promotion poster">
               <div class="poster-content content-left">
