@@ -248,9 +248,9 @@ get_header();
                         <a href="<?php the_permalink(); ?>">
                           <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="1500" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Product Images">
                         </a>
-                        <div class="label-block label-right">
+                        <!-- <div class="label-block label-right">
                           <div class="product-badget">20% Off</div>
-                        </div>
+                        </div> -->
                         <div class="product-hover-action">
                           <ul class="cart-action">
                             <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
@@ -309,9 +309,9 @@ get_header();
                         <a href="<?php the_permalink(); ?>">
                           <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="1500" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Product Images">
                         </a>
-                        <div class="label-block label-right">
+                        <!-- <div class="label-block label-right">
                           <div class="product-badget">20% Off</div>
-                        </div>
+                        </div> -->
                         <div class="product-hover-action">
                           <ul class="cart-action">
                             <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
@@ -353,7 +353,7 @@ get_header();
         </div>
         <div class="row">
           <div class="col-lg-12 text-center mt--20 mt_sm--0">
-            <a href="shop.html" class="axil-btn btn-bg-lighter btn-load-more">ყველა პროდუქტი</a>
+            <a href="<?php echo esc_url(home_url('/shop')); ?>" class="axil-btn btn-bg-lighter btn-load-more">ყველა პროდუქტი</a>
           </div>
         </div>
       </div>
@@ -367,7 +367,7 @@ get_header();
       <div class="row">
         <div class="col-lg-12 mb--30">
           <div class="single-poster">
-            <a href="<?php //echo get_term_link('Youngster', 'product_tag'); 
+            <a href="<?php echo get_term_link('madtown', 'product_tag');
                       ?>">
               <img src="<?php echo get_template_directory_uri() . '/img/partials/madtown/madgroup.jpeg'; ?>" alt="eTrade promotion poster">
               <div class="poster-content content-left">
@@ -392,7 +392,7 @@ get_header();
       <div class="row">
         <div class="col-lg-6 mb--30">
           <div class="single-poster">
-            <a href="<?php //echo get_term_link('Youngster', 'product_tag'); 
+            <a href="<?php echo get_term_link('youngster', 'product_tag');
                       ?>">
               <img src="<?php echo get_template_directory_uri() . '/img/partials/youngster/photoshoting/konawide.jpg'; ?>" alt="eTrade promotion poster">
               <div class="poster-content content-left">
@@ -409,7 +409,8 @@ get_header();
         </div>
         <div class="col-lg-6 mb--30">
           <div class="single-poster">
-            <a href="shop-sidebar.html">
+            <a href="<?php echo get_term_link('childhood-memories', 'product_tag');
+                      ?>">
               <img src="<?php echo get_template_directory_uri() . '/img/partials/youngster/photoshoting/girlbuff.jpg'; ?>" alt="eTrade promotion poster">
               <div class="poster-content content-left">
                 <div class="inner">
