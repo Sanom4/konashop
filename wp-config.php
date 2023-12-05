@@ -42,22 +42,22 @@ define( 'DB_NAME', 'konashop' );
 /* end Local INV - Sanom4 */
 
 //prod server
-define('DB_NAME', 'konashop_wp');
+//define('DB_NAME', 'konashop_wp');
 
 /** Database username */
-define('DB_USER', 'konashop_wp');
+//define('DB_USER', 'konashop_wp');
 
 /** Database password */
-define('DB_PASSWORD', '&qr0582Gf');
+//define('DB_PASSWORD', '&qr0582Gf');
 
 /** Database hostname */
-define('DB_HOST', 'localhost');
+//define('DB_HOST', 'localhost');
 
 /** Database charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8mb4');
+//define('DB_CHARSET', 'utf8mb4');
 
 /** The database collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+//define('DB_COLLATE', '');
 
 
 /**#@+

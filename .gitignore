@@ -4,16 +4,16 @@
 # Don't ignore the .gitignore file
 !.gitignore
 
-# Don't ignore the wp-config.php file
-!wp-config.php
 
-# Don't ignore PHP files in the root directory
-!*.php
+
+#  ignore PHP files in the root directory
+*.php
 
 # Don't ignore the wp-admin directory
-!wp-admin/
+wp-admin/
 
 # Don't ignore the wp-content directory and its subdirectories
 !wp-content/
 !wp-content/themes/
 !wp-content/plugins/
+wp-config.php
