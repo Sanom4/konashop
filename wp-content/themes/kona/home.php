@@ -241,15 +241,6 @@ get_header();
                   $products->the_post();
                   global $product;
               ?>
-                  <!--
-      <div class="product">
-        <a href="<?php the_permalink(); ?>">
-          <?php the_post_thumbnail(); ?>
-        </a>
-        <h3><?php the_title(); ?></h3>
-        <span class="price"><?php echo $product->get_price_html(); ?></span>
-      </div>
-    -->
 
                   <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
                     <div class="axil-product product-style-one">
@@ -293,292 +284,59 @@ get_header();
           <!-- End .slick-single-layout -->
           <div class="slick-single-layout">
             <div class="row row--15">
-              <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                <div class="axil-product product-style-one">
-                  <div class="thumbnail">
-                    <a href="single-product.html">
-                      <img src="assets/images/product/furniture/product-5.png" alt="Product Images">
-                    </a>
-                    <div class="label-block label-right">
-                      <div class="product-badget">20% Off</div>
-                    </div>
-                    <div class="product-hover-action">
-                      <ul class="cart-action">
-                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <div class="inner">
-                      <h5 class="title"><a href="single-product.html">Neue Sofa Chair</a></h5>
-                      <div class="product-price-variant">
-                        <span class="price current-price">$29.99</span>
-                        <span class="price old-price">$49.99</span>
+
+              <?php
+              $args = array(
+                'post_type'      => 'product',
+                'posts_per_page' => 8, // Number of products to display
+                'offset'         => 8,
+              );
+
+              $products = new WP_Query($args);
+
+              if ($products->have_posts()) {
+                while ($products->have_posts()) {
+                  $products->the_post();
+                  global $product;
+              ?>
+
+                  <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
+                    <div class="axil-product product-style-one">
+                      <div class="thumbnail">
+                        <a href="<?php the_permalink(); ?>">
+                          <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="1500" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Product Images">
+                        </a>
+                        <div class="label-block label-right">
+                          <div class="product-badget">20% Off</div>
+                        </div>
+                        <div class="product-hover-action">
+                          <ul class="cart-action">
+                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                            <li class="select-option"><a href="cart.html">Add to Cart</a></li>
+                            <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="inner">
+                          <h5 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                          <div class="product-price-variant">
+                            <span class="price current-price"><?php echo $product->get_price_html(); ?></span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <!-- End Single Product  -->
-              <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                <div class="axil-product product-style-one">
-                  <div class="thumbnail">
-                    <a href="single-product.html">
-                      <img src="assets/images/product/furniture/product-2.png" alt="Product Images">
-                    </a>
-                    <div class="product-hover-action">
-                      <ul class="cart-action">
-                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                        <li class="select-option"><a href="single-product.html">Select Option</a></li>
-                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <div class="inner">
-                      <h5 class="title"><a href="single-product.html">Triangle Sofa Chair</a></h5>
-                      <div class="product-price-variant">
-                        <span class="price current-price">$29.99</span>
-                        <span class="price old-price">$49.99</span>
-                      </div>
-                      <div class="color-variant-wrapper">
-                        <ul class="color-variant">
-                          <li class="color-extra-01 active"><span><span class="color"></span></span>
-                          </li>
-                          <li class="color-extra-02"><span><span class="color"></span></span>
-                          </li>
-                          <li class="color-extra-03"><span><span class="color"></span></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Single Product  -->
-              <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                <div class="axil-product product-style-one">
-                  <div class="thumbnail">
-                    <a href="single-product.html">
-                      <img src="assets/images/product/furniture/product-3.png" alt="Product Images">
-                    </a>
-                    <div class="label-block label-right">
-                      <div class="product-badget">20% Off</div>
-                    </div>
-                    <div class="product-hover-action">
-                      <ul class="cart-action">
-                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                        <li class="select-option"><a href="single-product.html">Select Option</a></li>
-                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <div class="inner">
-                      <h5 class="title"><a href="single-product.html">Stainless Chair</a></h5>
-                      <div class="product-price-variant">
-                        <span class="price current-price">$29.99</span>
-                        <span class="price old-price">$49.99</span>
-                      </div>
-                      <div class="color-variant-wrapper">
-                        <ul class="color-variant">
-                          <li class="color-extra-01 active"><span><span class="color"></span></span>
-                          </li>
-                          <li class="color-extra-02"><span><span class="color"></span></span>
-                          </li>
-                          <li class="color-extra-03"><span><span class="color"></span></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Single Product  -->
-              <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                <div class="axil-product product-style-one">
-                  <div class="thumbnail">
-                    <a href="single-product.html">
-                      <img src="assets/images/product/furniture/product-4.png" alt="Product Images">
-                    </a>
-                    <div class="product-hover-action">
-                      <ul class="cart-action">
-                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                        <li class="select-option"><a href="single-product.html">Select Option</a></li>
-                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <div class="inner">
-                      <h5 class="title"><a href="single-product.html">Wooden Chair</a></h5>
-                      <div class="product-price-variant">
-                        <span class="price current-price">$29.99</span>
-                        <span class="price old-price">$49.99</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Single Product  -->
-              <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                <div class="axil-product product-style-one">
-                  <div class="thumbnail">
-                    <a href="single-product.html">
-                      <img src="assets/images/product/furniture/product-13.png" alt="Product Images">
-                    </a>
-                    <div class="label-block label-right">
-                      <div class="product-badget">20% Off</div>
-                    </div>
-                    <div class="product-hover-action">
-                      <ul class="cart-action">
-                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <div class="inner">
-                      <h5 class="title"><a href="single-product.html">Reading Table</a></h5>
-                      <div class="product-price-variant">
-                        <span class="price current-price">$29.99</span>
-                        <span class="price old-price">$49.99</span>
-                      </div>
-                      <div class="color-variant-wrapper">
-                        <ul class="color-variant">
-                          <li class="color-extra-01 active"><span><span class="color"></span></span>
-                          </li>
-                          <li class="color-extra-02"><span><span class="color"></span></span>
-                          </li>
-                          <li class="color-extra-03"><span><span class="color"></span></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Single Product  -->
-              <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                <div class="axil-product product-style-one">
-                  <div class="thumbnail">
-                    <a href="single-product.html">
-                      <img src="assets/images/product/furniture/product-10.png" alt="Product Images">
-                    </a>
-                    <div class="label-block label-right">
-                      <div class="product-badget">20% Off</div>
-                    </div>
-                    <div class="product-hover-action">
-                      <ul class="cart-action">
-                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                        <li class="select-option"><a href="single-product.html">Select Option</a></li>
-                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <div class="inner">
-                      <h5 class="title"><a href="single-product.html">Fiber Chair</a></h5>
-                      <div class="product-price-variant">
-                        <span class="price current-price">$29.99</span>
-                        <span class="price old-price">$49.99</span>
-                      </div>
-                      <div class="color-variant-wrapper">
-                        <ul class="color-variant">
-                          <li class="color-extra-01 active"><span><span class="color"></span></span>
-                          </li>
-                          <li class="color-extra-02"><span><span class="color"></span></span>
-                          </li>
-                          <li class="color-extra-03"><span><span class="color"></span></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Single Product  -->
-              <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                <div class="axil-product product-style-one">
-                  <div class="thumbnail">
-                    <a href="single-product.html">
-                      <img src="assets/images/product/furniture/product-11.png" alt="Product Images">
-                    </a>
-                    <div class="label-block label-right">
-                      <div class="product-badget">20% Off</div>
-                    </div>
-                    <div class="product-hover-action">
-                      <ul class="cart-action">
-                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                        <li class="select-option"><a href="single-product.html">Select Option</a></li>
-                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <div class="inner">
-                      <h5 class="title"><a href="single-product.html">Office Table</a></h5>
-                      <div class="product-price-variant">
-                        <span class="price current-price">$29.99</span>
-                        <span class="price old-price">$49.99</span>
-                      </div>
-                      <div class="color-variant-wrapper">
-                        <ul class="color-variant">
-                          <li class="color-extra-01 active"><span><span class="color"></span></span>
-                          </li>
-                          <li class="color-extra-02"><span><span class="color"></span></span>
-                          </li>
-                          <li class="color-extra-03"><span><span class="color"></span></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Single Product  -->
-              <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                <div class="axil-product product-style-one">
-                  <div class="thumbnail">
-                    <a href="single-product.html">
-                      <img src="assets/images/product/furniture/product-12.png" alt="Product Images">
-                    </a>
-                    <div class="label-block label-right">
-                      <div class="product-badget">20% Off</div>
-                    </div>
-                    <div class="product-hover-action">
-                      <ul class="cart-action">
-                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                        <li class="select-option"><a href="single-product.html">Select Option</a></li>
-                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <div class="inner">
-                      <h5 class="title"><a href="single-product.html">Wooden Chair</a></h5>
-                      <div class="product-price-variant">
-                        <span class="price current-price">$29.99</span>
-                        <span class="price old-price">$49.99</span>
-                      </div>
-                      <div class="color-variant-wrapper">
-                        <ul class="color-variant">
-                          <li class="color-extra-01 active"><span><span class="color"></span></span>
-                          </li>
-                          <li class="color-extra-02"><span><span class="color"></span></span>
-                          </li>
-                          <li class="color-extra-03"><span><span class="color"></span></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Single Product  -->
+
+
+              <?php
+                }
+                wp_reset_postdata();
+              } else {
+                echo 'No products found.';
+              }
+              ?>
+
             </div>
           </div>
           <!-- End .slick-single-layout -->
