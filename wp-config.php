@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The base configuration for WordPress
  *
@@ -20,22 +21,44 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+/* Local INV - Sanom4
 define( 'DB_NAME', 'konashop' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+//define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'nikolela05A@1' );
+//define( 'DB_PASSWORD', 'nikolela05A@1' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+//define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+//define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+//define( 'DB_COLLATE', '' );
+
+/* end Local INV - Sanom4 */
+
+//prod server
+define('DB_NAME', 'konashop_wp');
+
+/** Database username */
+define('DB_USER', 'konashop_wp');
+
+/** Database password */
+define('DB_PASSWORD', '&9tcmB238');
+
+/** Database hostname */
+define('DB_HOST', 'localhost');
+
+/** Database charset to use in creating database tables. */
+define('DB_CHARSET', 'utf8mb4');
+
+/** The database collate type. Don't change this if in doubt. */
+define('DB_COLLATE', '');
+
 
 /**#@+
  * Authentication unique keys and salts.
@@ -48,14 +71,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'yje&-NoFqIU|uI:a:5ZrAU5scO]*Hq^e`MLUYEB]gsn.SyUR~6|;*@~8l:ul-Xe#' );
-define( 'SECURE_AUTH_KEY',  'H]:+X!/XB4zhp{Cij[$CNF%LP8y=A<[C8NTYp$oRw*o6$|Y_&jbusNzhL-v^P0Z:' );
-define( 'LOGGED_IN_KEY',    'NCly}L7))e.9XUx@8}6cZYT,K|},mib:nV)maxddVB{]^=u.2y1ODQP^!r+Qo?ez' );
-define( 'NONCE_KEY',        'bbHI}QCkMl${]Y|R,!?9S0ZMyO!Ue+6[ >@^G`5ZJ;MZTa{%XJSL=0]T:zc@Lz),' );
-define( 'AUTH_SALT',        'YFmqT$Z|y#Wuqbg.o[$:MDl=.bt(,zocSlv2Iek!QXIc2`[{3<?&3PO/8?{vGZ{6' );
-define( 'SECURE_AUTH_SALT', 'Amz}pQwEY+MH(D`4_Q?llxgSp_%YHtvsr2;!-2@u7ZdK|Pb8#w+m=YOmOVHmfb-k' );
-define( 'LOGGED_IN_SALT',   '.4w ;8Si,Y+r()BaZqeO)utv^E^*%Toznc,U )bH=-=vwK`JoR59#a-#V/RALQ^q' );
-define( 'NONCE_SALT',       ' `.+.:hgT}<!CEj=UM D%3&RSJy/f<QfthS1M`D=QBtuM_%Kx4rF]^(Am6hLNBKh' );
+define('AUTH_KEY',         'yje&-NoFqIU|uI:a:5ZrAU5scO]*Hq^e`MLUYEB]gsn.SyUR~6|;*@~8l:ul-Xe#');
+define('SECURE_AUTH_KEY',  'H]:+X!/XB4zhp{Cij[$CNF%LP8y=A<[C8NTYp$oRw*o6$|Y_&jbusNzhL-v^P0Z:');
+define('LOGGED_IN_KEY',    'NCly}L7))e.9XUx@8}6cZYT,K|},mib:nV)maxddVB{]^=u.2y1ODQP^!r+Qo?ez');
+define('NONCE_KEY',        'bbHI}QCkMl${]Y|R,!?9S0ZMyO!Ue+6[ >@^G`5ZJ;MZTa{%XJSL=0]T:zc@Lz),');
+define('AUTH_SALT',        'YFmqT$Z|y#Wuqbg.o[$:MDl=.bt(,zocSlv2Iek!QXIc2`[{3<?&3PO/8?{vGZ{6');
+define('SECURE_AUTH_SALT', 'Amz}pQwEY+MH(D`4_Q?llxgSp_%YHtvsr2;!-2@u7ZdK|Pb8#w+m=YOmOVHmfb-k');
+define('LOGGED_IN_SALT',   '.4w ;8Si,Y+r()BaZqeO)utv^E^*%Toznc,U )bH=-=vwK`JoR59#a-#V/RALQ^q');
+define('NONCE_SALT',       ' `.+.:hgT}<!CEj=UM D%3&RSJy/f<QfthS1M`D=QBtuM_%Kx4rF]^(Am6hLNBKh');
 
 /**#@-*/
 
@@ -79,7 +102,7 @@ $table_prefix = 'kona_';
  *
  * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define('WP_DEBUG', false);
 
 /* Add any custom values between this line and the "stop editing" line. */
 
@@ -88,8 +111,8 @@ define( 'WP_DEBUG', false );
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
-if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+if (!defined('ABSPATH')) {
+	define('ABSPATH', __DIR__ . '/');
 }
 
 /** Sets up WordPress vars and included files. */
