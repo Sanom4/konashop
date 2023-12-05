@@ -257,7 +257,7 @@ get_header();
                             <!-- <a href="cart.html">Add to Cart</a>-->
                             <?php woocommerce_template_loop_add_to_cart(); ?>
                             <li class="wishlist">
-                              <a href="<?php echo esc_url(add_query_arg('add_to_wishlist', $product->get_id())); ?>"><i class="far fa-heart"></i></a>
+                              <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?><i class="far fa-heart"></i>
                             </li>
                           </ul>
                         </div>
@@ -321,7 +321,7 @@ get_header();
 
                             </li>
                             <li class="wishlist">
-                              <a href="<?php echo esc_url(add_query_arg('add_to_wishlist', $product->get_id())); ?>"><i class="far fa-heart"></i></a>
+                              <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?><i class="far fa-heart"></i>
                             </li>
                           </ul>
                         </div>
