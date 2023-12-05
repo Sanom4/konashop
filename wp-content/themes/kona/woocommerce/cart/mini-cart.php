@@ -106,17 +106,20 @@ do_action('woocommerce_before_mini_cart'); ?>
     ?>
   </div>
 
-  <div class="cart-footer bg-body-tertiary text-center p-3">
+  <div class="cart-footer">
 
     <p class="woocommerce-mini-cart__total total">
-      <?php
-      /**
-       * Hook: woocommerce_widget_shopping_cart_total.
-       *
-       * @hooked woocommerce_widget_shopping_cart_subtotal - 10
-       */
-      do_action('woocommerce_widget_shopping_cart_total');
-      ?>
+    <h3 class="cart-subtotal">
+      <span class="subtotal-title">Subtotal:</span>
+      <span class="subtotal-amount"> <?php
+                                      /**
+                                       * Hook: woocommerce_widget_shopping_cart_total.
+                                       *
+                                       * @hooked woocommerce_widget_shopping_cart_subtotal - 10
+                                       */
+                                      do_action('woocommerce_widget_shopping_cart_total');
+                                      ?></span>
+    </h3>
     </p>
 
     <p class="text-muted small shipping-text"><?php esc_html_e('To find out your shipping cost, please proceed to checkout.', 'bootscore'); ?></p>
