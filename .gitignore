@@ -1,8 +1,10 @@
 # Ignore everything in the root directory
-/*
-
-# Don't ignore the .gitignore file
 !.gitignore
+/*
+wp-config.php
+wp-config.php
+# Don't ignore the .gitignore file
+
 
 
 
