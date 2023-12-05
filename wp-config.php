@@ -48,7 +48,7 @@ define('DB_NAME', 'konashop_wp');
 define('DB_USER', 'konashop_wp');
 
 /** Database password */
-define('DB_PASSWORD', '&9tcmB238');
+define('DB_PASSWORD', '&qr0582Gf');
 
 /** Database hostname */
 define('DB_HOST', 'localhost');
