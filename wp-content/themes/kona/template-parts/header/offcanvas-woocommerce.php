@@ -39,7 +39,7 @@ if (is_account_page()) {
 if (is_checkout() || is_cart()) {
   // Do nothing
 } else { ?>
-  <div class="offcanvas offcanvas-end cart-dropdown" tabindex="-1" id="offcanvas-cart">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-cart">
     <div class="offcanvas-header">
       <span class="h5 offcanvas-title"><?php esc_html_e('Cart', 'bootscore'); ?></span>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
