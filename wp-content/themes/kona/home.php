@@ -585,7 +585,7 @@ get_header();
         </div>
         <div class="row">
           <div class="col-lg-12 text-center mt--20 mt_sm--0">
-            <a href="shop.html" class="axil-btn btn-bg-lighter btn-load-more">View All Products</a>
+            <a href="shop.html" class="axil-btn btn-bg-lighter btn-load-more">ყველა პროდუქტი</a>
           </div>
         </div>
       </div>
@@ -598,12 +598,12 @@ get_header();
       <div class="row">
         <div class="col-lg-6 mb--30">
           <div class="single-poster">
-            <a href="shop.html">
+            <a href="<?php echo get_term_link('Youngster', 'product_tag'); ?>">
               <img src="<?php echo get_template_directory_uri() . '/img/partials/youngster/photoshoting/konawide.jpg'; ?>" alt="eTrade promotion poster">
               <div class="poster-content">
                 <div class="inner">
-                  <h3 class="title">Rich sound, <br> for less.</h3>
-                  <span class="sub-title">Collections <i class="fal fa-long-arrow-right"></i></span>
+                  <h3 class="title">Youngster Memories<br>.</h3>
+                  <span class="sub-title">კოლექცია <i class="fal fa-long-arrow-right"></i></span>
                 </div>
               </div>
               <!-- End .poster-content -->
