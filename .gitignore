@@ -1,2 +1,11 @@
 # Other ignored files and directories
-#wp-config.php
+wp-config.php
+# all php files other than wp-content
+*.php
+wp-admin/
+!wp-content/
+!wp-content/themes/
+!wp-content/plugins/
+# ignore everything in the root except the "wp-content" directory. 
+/*
+!.gitignore
