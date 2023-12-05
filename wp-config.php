@@ -59,6 +59,8 @@ define( 'DB_NAME', 'konashop' );
 /** The database collate type. Don't change this if in doubt. */
 //define('DB_COLLATE', '');
 
+//test
+
 
 /**#@+
  * Authentication unique keys and salts.
