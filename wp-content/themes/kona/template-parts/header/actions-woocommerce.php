@@ -52,8 +52,7 @@ if (is_cart()) {
     <a href="#" class="cart-dropdown-btn">
       <?php if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')))) {
         $count = WC()->cart->cart_contents_count;
-      ?>
-        <?php if ($count > 0) { ?>
+        if ($count > 0) { ?>
           <span class="cart-count">
             <?= esc_html($count); ?>
           <?php

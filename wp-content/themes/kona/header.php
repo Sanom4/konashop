@@ -140,8 +140,3 @@ defined('ABSPATH') || exit;
     </div>
   </header>
   <!-- End Header -->
-
-
-
-
-  ?>
