@@ -1,0 +1,46 @@
+.header-brand a.logo img {
+    max-width: 120px!important;
+}
+
+.fasblack {
+    color: #000!important;
+    background-color: #FFF!important;
+}
+
+.slick-slide.slick-current .main-slider-content .subtitle {
+    color: #000!important;
+}
+
+.single-slide {
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    opacity: 0.2;
+    border-radius: 5px;
+}
+
+.main-slider-content {
+    position: relative;
+    z-index: 1;
+}
+
+.nopacity
+{
+    opacity: 1!important;
+    position: relative;
+}
+
+.main-slider-style-5 .slider-box-wrap {
+background: transparent!important;
+}
+
+.main-slider-style-5 .slider-box-wrap .axil-slick-dots .slick-dots {
+    bottom: 10px!important;
+}
