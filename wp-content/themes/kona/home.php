@@ -254,8 +254,11 @@ get_header();
                         <div class="product-hover-action">
                           <ul class="cart-action">
                             <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                            <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                            <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+                            <!-- <a href="cart.html">Add to Cart</a>-->
+                            <?php woocommerce_template_loop_add_to_cart(); ?>
+                            <li class="wishlist">
+                              <a href="<?php echo esc_url(add_query_arg('add_to_wishlist', $product->get_id())); ?>"><i class="far fa-heart"></i></a>
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -312,8 +315,14 @@ get_header();
                         <div class="product-hover-action">
                           <ul class="cart-action">
                             <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                            <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                            <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+                            <li class="select-option">
+                              <!-- <a href="cart.html">Add to Cart</a>-->
+                              <?php woocommerce_template_loop_add_to_cart(); ?>
+
+                            </li>
+                            <li class="wishlist">
+                              <a href="<?php echo esc_url(add_query_arg('add_to_wishlist', $product->get_id())); ?>"><i class="far fa-heart"></i></a>
+                            </li>
                           </ul>
                         </div>
                       </div>
