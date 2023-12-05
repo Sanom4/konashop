@@ -9,8 +9,8 @@
 wp-content/*
 
 # Don't ignore the konaboot theme and everything inside it
-!wp-content/themes/konaboot/
-!wp-content/themes/konaboot/*
+!wp-content/themes/konastore/
+!wp-content/themes/konastore/*
 
 # Don't ignore the konaplugin plugin and everything inside it
 !wp-content/plugins/konaplugin/
