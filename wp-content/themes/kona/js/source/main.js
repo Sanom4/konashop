@@ -29,10 +29,10 @@
 			axilInit.campaignCountdown(".campaign-countdown", "2023/10/01");
 			axilInit.countdownInit(".poster-countdown", "2023/06/01");
 			axilInit.countdownInit(".sale-countdown", "2023/10/31");
-			//axilInit.sideOffcanvasToggle(
-			//	".cart-dropdown-btn",
-			//	"#cart-dropdown"
-			//);
+			axilInit.sideOffcanvasToggle(
+				".cart-dropdown-btn",
+				"#cart-dropdown"
+			);
 			axilInit.sideOffcanvasToggle(
 				".mobile-nav-toggler",
 				".header-main-nav"
@@ -1053,7 +1053,7 @@
 				});
 			}
 		},
-/*
+
 		sideOffcanvasToggle: function (selectbtn, openElement) {
 			$("body").on("click", selectbtn, function (e) {
 				e.preventDefault();
@@ -1085,7 +1085,7 @@
 				});
 			});
 		},
-*/
+
 		stickyHeaderMenu: function () {
 			$(window).on("scroll", function () {
 				// Sticky Class Add
