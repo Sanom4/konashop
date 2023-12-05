@@ -64,3 +64,25 @@ background: transparent!important;
     padding: 25px;
     border-radius: 0px 5px 5px 0px;
 }
+
+.product_type_simple {
+    position: relative;
+    height: 40px;
+    line-height: 39px;
+    padding: 0 18px;
+    display: block;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--color-white);
+    background-color: #ed1d24;
+    transition: .3s;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, .06);
+    position: relative;
+    z-index: 1;
+}
+
+.product_type_simple:hover {
+    background-color: #000;
+    color: #FFF!important;
+}

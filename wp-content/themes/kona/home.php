@@ -323,6 +323,7 @@ get_header();
                             <li class="wishlist">
                               <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?><i class="far fa-heart"></i>
                             </li>
+
                           </ul>
                         </div>
                       </div>
