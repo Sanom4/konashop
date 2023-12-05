@@ -1,1 +1,0 @@
-/Users/sanom4/github/konashop/wp-content/plugins/query-monitor/wp-content/db.php

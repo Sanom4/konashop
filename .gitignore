@@ -11,12 +11,10 @@ wp-config.php
 #  ignore PHP files in the root directory
 *.php
 
-# Don't ignore the wp-admin directory
+#  ignore the wp-admin directory
 wp-admin/
 
 # Don't ignore the wp-content directory and its subdirectories
-!wp-content/
-!wp-content/themes/
-!wp-content/plugins/
-wp-config.php
-wp-config.php
+wp-content/*
+!wp-content/themes/konaboot
+wp-content/plugins/*
