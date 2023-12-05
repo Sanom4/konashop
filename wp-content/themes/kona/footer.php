@@ -24,21 +24,18 @@ defined('ABSPATH') || exit;
         <!-- Start Single Widget  -->
         <div class="col-lg-3 col-sm-6">
           <div class="axil-footer-widget">
-            <h5 class="widget-title">Support</h5>
-            <!-- <div class="logo mb--30">
-                            <a href="index.html">
-                                <img class="light-logo" src="assets/images/logo/logo.png" alt="Logo Images">
-                            </a>
-                        </div> -->
+            <div class="logo mb--30">
+              <a href="index.html">
+                <img class="light-logo" src="<?php echo get_template_directory_uri() . '/img/logo/logofgl.png'; ?>" alt="Logo Images">
+              </a>
+            </div>
             <div class="inner">
-              <p>685 Market Street, <br>
-                Las Vegas, LA 95820, <br>
-                United States.
+              Wash with blood of your enemies.
               </p>
               <ul class="support-list-item">
                 <li><a href="mailto:info@konastore.ge"><i class="fal fa-envelope-open"></i> info@konastore.ge</a></li>
-                <li><a href="tel:(+01)850-315-5862"><i class="fal fa-phone-alt"></i> (+01) 850-315-5862</a></li>
-                <!-- <li><i class="fal fa-map-marker-alt"></i> 685 Market Street,  <br> Las Vegas, LA 95820, <br> United States.</li> -->
+                <li><a href="tel:(+995)591 90 41 42"><i class="fal fa-phone-alt"></i> (+995) 591 90 41 42</a></li>
+                <li><a href="tel:(+995)598 921 227"><i class="fal fa-phone-alt"></i> (+995) 598 921 227</a></li>
               </ul>
             </div>
           </div>
@@ -47,14 +44,14 @@ defined('ABSPATH') || exit;
         <!-- Start Single Widget  -->
         <div class="col-lg-3 col-sm-6">
           <div class="axil-footer-widget">
-            <h5 class="widget-title">Account</h5>
+            <h5 class="widget-title">ანგარიში</h5>
             <div class="inner">
               <ul>
-                <li><a href="my-account.html">My Account</a></li>
-                <li><a href="sign-up.html">Login / Register</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="wishlist.html">Wishlist</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="<?php echo esc_url(home_url('/my-account')); ?>">My Account</a></li>
+                <li><a href="<?php echo esc_url(home_url('/my-account')); ?>">Login / Register</a></li>
+                <li><a href="<?php echo esc_url(home_url('/cart')); ?>">Cart</a></li>
+                <li><a href="<?php echo esc_url(home_url('/wishlist')); ?>">Wishlist</a></li>
+                <li><a href="<?php echo esc_url(home_url('/shop')); ?>">Shop</a></li>
               </ul>
             </div>
           </div>
@@ -63,14 +60,13 @@ defined('ABSPATH') || exit;
         <!-- Start Single Widget  -->
         <div class="col-lg-3 col-sm-6">
           <div class="axil-footer-widget">
-            <h5 class="widget-title">Quick Link</h5>
+            <h5 class="widget-title">სწრაფი ბმულები</h5>
             <div class="inner">
               <ul>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="terms-of-service.html">Terms Of Use</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="<?php echo esc_url(home_url('/privacy-policy')); ?>">Privacy Policy</a></li>
+                <li><a href="<?php echo esc_url(home_url('/terms-of-use')); ?>">Terms Of Use</a></li>
+                <li><a href="<?php echo esc_url(home_url('/faq')); ?>">FAQ</a></li>
+                <li><a href="<?php echo esc_url(home_url('/contact')); ?>">Contact</a></li>
               </ul>
             </div>
           </div>
