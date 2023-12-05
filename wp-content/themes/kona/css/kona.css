@@ -54,3 +54,13 @@ background: transparent!important;
     left: 10%;
     right: 0!important;
 }
+.title-highlighter.highlighter-primary2 {
+    color: #000!important;
+}
+
+.single-poster .poster-content.content-left {
+    background-color: rgb(83 14 14 / 17%);
+    width: 75%;
+    padding: 25px;
+    border-radius: 0px 5px 5px 0px;
+}
