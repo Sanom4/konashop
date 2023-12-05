@@ -25,12 +25,12 @@ defined('ABSPATH') || exit;
         <div class="col-lg-3 col-sm-6">
           <div class="axil-footer-widget">
             <div class="logo mb--30">
-              <a href="index.html">
+              <a href="<?php echo esc_url(home_url('/')); ?>">
                 <img class="light-logo" src="<?php echo get_template_directory_uri() . '/img/logo/logofgl.png'; ?>" alt="Logo Images">
               </a>
             </div>
             <div class="inner">
-              Wash with blood of your enemies.
+
               </p>
               <ul class="support-list-item">
                 <li><a href="mailto:info@konastore.ge"><i class="fal fa-envelope-open"></i> info@konastore.ge</a></li>
@@ -75,22 +75,8 @@ defined('ABSPATH') || exit;
         <!-- Start Single Widget  -->
         <div class="col-lg-3 col-sm-6">
           <div class="axil-footer-widget">
-            <h5 class="widget-title">Download App</h5>
             <div class="inner">
-              <span>Save $3 With App &amp; New User only</span>
-              <div class="download-btn-group">
-                <div class="qr-code">
-                  <img src="assets/images/others/qr.png" alt="Axilthemes">
-                </div>
-                <div class="app-link">
-                  <a href="#">
-                    <img src="assets/images/others/app-store.png" alt="App Store">
-                  </a>
-                  <a href="#">
-                    <img src="assets/images/others/play-store.png" alt="Play Store">
-                  </a>
-                </div>
-              </div>
+              <img class="light-logo" src="<?php echo get_template_directory_uri() . '/img/partials/birka/birka axali.png'; ?>" alt="Logo Images">
             </div>
           </div>
         </div>
