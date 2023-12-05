@@ -593,34 +593,44 @@ get_header();
   </div>
   <!-- End Expolre Product Area  -->
 
-  <div class="axil-newsletter-area axil-section-gap pt--0">
+
+  <div class="axil-poster">
     <div class="container">
-      <div class="etrade-newsletter-wrapper bg_image bg_image--5" style="background-image: url(<?php echo get_template_directory_uri() . '/img/partials/madtown/madgroup.jpeg'; ?>);">
-        <div class="newsletter-content">
-          <span class="title-highlighter highlighter-primary2"><i class="fas fa-envelope-open"></i>Newsletter</span>
-          <h2 class="title mb--40 mb_sm--30">Get weekly update</h2>
-          <div class="input-group newsletter-form">
-            <div class="position-relative newsletter-inner mb--15">
-              <input placeholder="example@gmail.com" type="text" control-id="ControlID-17">
-            </div>
-            <button type="submit" class="axil-btn mb--15" control-id="ControlID-18">Subscribe</button>
+      <div class="row">
+        <div class="col-lg-12 mb--30">
+          <div class="single-poster">
+            <a href="<?php //echo get_term_link('Youngster', 'product_tag'); 
+                      ?>">
+              <img src="<?php echo get_template_directory_uri() . '/img/partials/madtown/madgroup.jpeg'; ?>" alt="eTrade promotion poster">
+              <div class="poster-content">
+                <div class="inner">
+                  <span class="title-highlighter highlighter-primary2"><i class="fas fa-album"></i>კოლექცია</span>
+                  <h3 class="title">Mad Town Memories</h3>
+                  <span class="sub-title">კოლექცია <i class="fal fa-long-arrow-right"></i></span>
+                </div>
+              </div>
+              <!-- End .poster-content -->
+            </a>
           </div>
+          <!-- End .single-poster -->
         </div>
       </div>
     </div>
-    <!-- End .container -->
   </div>
+
 
   <div class="axil-poster">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 mb--30">
           <div class="single-poster">
-            <a href="<?php echo get_term_link('Youngster', 'product_tag'); ?>">
+            <a href="<?php //echo get_term_link('Youngster', 'product_tag'); 
+                      ?>">
               <img src="<?php echo get_template_directory_uri() . '/img/partials/youngster/photoshoting/konawide.jpg'; ?>" alt="eTrade promotion poster">
               <div class="poster-content">
                 <div class="inner">
-                  <h3 class="title">Youngster Memories<br>.</h3>
+                  <span class="title-highlighter highlighter-primary2"><i class="fas fa-album"></i>კოლექცია</span>
+                  <h3 class="title">Youngster Memories</h3>
                   <span class="sub-title">კოლექცია <i class="fal fa-long-arrow-right"></i></span>
                 </div>
               </div>
@@ -635,8 +645,9 @@ get_header();
               <img src="<?php echo get_template_directory_uri() . '/img/partials/youngster/photoshoting/girlbuff.jpg'; ?>" alt="eTrade promotion poster">
               <div class="poster-content content-left">
                 <div class="inner">
-                  <span class="sub-title">50% Offer In Winter</span>
-                  <h3 class="title">Get VR <br> Reality Glass</h3>
+                  <span class="title-highlighter highlighter-primary2"><i class="fas fa-album"></i>კოლექცია</span>
+                  <h3 class="title">Childhood Memories</h3>
+                  <span class="sub-title">კოლექცია <i class="fal fa-long-arrow-right"></i></span>
                 </div>
               </div>
               <!-- End .poster-content -->
@@ -751,7 +762,7 @@ get_header();
         <div class="col-lg-6">
           <div class="single-poster">
             <a href="shop.html">
-              <img src="<?php echo get_template_directory_uri() . '/img/partials/youngster/photoshoting/boybuffface.jpg'; ?>" alt="eTrade promotion poster">
+              <img src="<?php echo get_template_directory_uri() . '/img/partials/exclusive/series1/group1.jpeg'; ?>" alt="eTrade promotion poster">
               <div class="poster-content">
                 <div class="inner">
                   <h3 class="title">Premimum <br> Quality.</h3>
@@ -766,7 +777,7 @@ get_header();
         <div class="col-lg-6">
           <div class="single-poster">
             <a href="shop-sidebar.html">
-              <img src="<?php echo get_template_directory_uri() . '/img/partials/youngster/photoshoting/girlbuffhair.jpg'; ?>" alt="eTrade promotion poster">
+              <img src="<?php echo get_template_directory_uri() . '/img/partials/exclusive/series1/group2.jpeg'; ?>" alt="eTrade promotion poster">
               <div class="poster-content content-left">
                 <div class="inner">
                   <span class="sub-title">50% Offer In Winter</span>
