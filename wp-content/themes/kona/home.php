@@ -595,7 +595,7 @@ get_header();
 
   <div class="axil-newsletter-area axil-section-gap pt--0">
     <div class="container">
-      <div class="etrade-newsletter-wrapper bg_image bg_image--5" style="background-image: url(<?php echo get_template_directory_uri() . '/img/partials/madtown/madboy.jpeg'; ?>);">
+      <div class="etrade-newsletter-wrapper bg_image bg_image--5" style="background-image: url(<?php echo get_template_directory_uri() . '/img/partials/madtown/madgroup.jpeg'; ?>);">
         <div class="newsletter-content">
           <span class="title-highlighter highlighter-primary2"><i class="fas fa-envelope-open"></i>Newsletter</span>
           <h2 class="title mb--40 mb_sm--30">Get weekly update</h2>
