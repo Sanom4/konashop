@@ -231,7 +231,7 @@ get_header();
               <?php
               $args = array(
                 'post_type'      => 'product',
-                'posts_per_page' => 4, // Number of products to display
+                'posts_per_page' => 8, // Number of products to display
               );
 
               $products = new WP_Query($args);
@@ -803,7 +803,7 @@ get_header();
             foreach ($categories as $category) {
               $category_link = get_term_link($category);
               $category_description = $category->description;
-              $category_thumbnail_id = get_woocommerce_term_meta($category->term_id, 'thumbnail_id', true);
+              $category_thumbnail_id = get_term_meta($category->term_id, 'thumbnail_id', true);
               $category_thumbnail_url = wp_get_attachment_image_src($category_thumbnail_id, 'thumbnail')[0];
             ?>
 
@@ -835,7 +835,7 @@ get_header();
             foreach ($categories as $category) {
               $category_link = get_term_link($category);
               $category_description = $category->description;
-              $category_thumbnail_id = get_woocommerce_term_meta($category->term_id, 'thumbnail_id', true);
+              $category_thumbnail_id = get_term_meta($category->term_id, 'thumbnail_id', true);
               $category_thumbnail_url = wp_get_attachment_image_src($category_thumbnail_id, 'thumbnail')[0];
             ?>
 
