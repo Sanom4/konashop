@@ -602,7 +602,7 @@ get_header();
             <a href="<?php //echo get_term_link('Youngster', 'product_tag'); 
                       ?>">
               <img src="<?php echo get_template_directory_uri() . '/img/partials/madtown/madgroup.jpeg'; ?>" alt="eTrade promotion poster">
-              <div class="poster-content">
+              <div class="poster-content content-left">
                 <div class="inner">
                   <span class="title-highlighter highlighter-primary2"><i class="fas fa-album"></i>კოლექცია</span>
                   <h3 class="title">Mad Town Memories</h3>
@@ -627,7 +627,7 @@ get_header();
             <a href="<?php //echo get_term_link('Youngster', 'product_tag'); 
                       ?>">
               <img src="<?php echo get_template_directory_uri() . '/img/partials/youngster/photoshoting/konawide.jpg'; ?>" alt="eTrade promotion poster">
-              <div class="poster-content">
+              <div class="poster-content content-left">
                 <div class="inner">
                   <span class="title-highlighter highlighter-primary2"><i class="fas fa-album"></i>კოლექცია</span>
                   <h3 class="title">Youngster Memories</h3>

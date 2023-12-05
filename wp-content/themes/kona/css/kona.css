@@ -49,12 +49,8 @@ background: transparent!important;
     background-color: #ed1d24!important;
 }
 
-.single-poster .poster-content {
+.single-poster .content-left {
 
     left: 10%;
     right: 0!important;
-}
-.single-poster {
-        left: 10%;
-            right: 0 !important;
 }
