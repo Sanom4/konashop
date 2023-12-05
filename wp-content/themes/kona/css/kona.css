@@ -90,3 +90,10 @@ background: transparent!important;
 .yith-wcwl-add-to-wishlist {
     margin-top: 0px!important;
 }
+
+span.feedback {
+    position: absolute;
+        z-index: 999;
+        margin: 10px;
+        margin-top: 9px;
+}
