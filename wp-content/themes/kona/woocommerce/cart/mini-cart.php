@@ -126,7 +126,7 @@ do_action('woocommerce_before_mini_cart'); ?>
 
     <?php do_action('woocommerce_widget_shopping_cart_before_buttons'); ?>
 
-    <div class="woocommerce-mini-cart__buttons buttons group-btn"><?php do_action('woocommerce_widget_shopping_cart_buttons'); ?></div>
+    <div class="group-btn"><?php do_action('woocommerce_widget_shopping_cart_buttons'); ?></div>
 
     <?php do_action('woocommerce_widget_shopping_cart_after_buttons'); ?>
 
