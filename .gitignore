@@ -16,5 +16,6 @@ wp-admin/
 
 # Don't ignore the wp-content directory and its subdirectories
 wp-content/*
-!wp-content/themes/konaboot
+!wp-content/themes/konaboot/
+!wp-content/themes/konaboot/*
 wp-content/plugins/*
