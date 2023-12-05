@@ -9,14 +9,15 @@
 
 
 // Exit if accessed directly
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 
 /**
  * Mini cart Header
  */
 if (!function_exists('bs_mini_cart')) :
-  function bs_mini_cart($fragments) {
+  function bs_mini_cart($fragments)
+  {
 
     ob_start();
     $count = WC()->cart->cart_contents_count; ?>
@@ -26,7 +27,7 @@ if (!function_exists('bs_mini_cart')) :
       <?php } ?>
     </span>
 
-    <?php
+<?php
     $fragments['span.cart-content'] = ob_get_clean();
 
     return $fragments;
@@ -43,12 +44,14 @@ endif;
 remove_action('woocommerce_widget_shopping_cart_buttons', 'woocommerce_widget_shopping_cart_button_view_cart', 10);
 remove_action('woocommerce_widget_shopping_cart_buttons', 'woocommerce_widget_shopping_cart_proceed_to_checkout', 20);
 
-function my_woocommerce_widget_shopping_cart_button_view_cart() {
-  echo '<a href="' . esc_url(wc_get_cart_url()) . '" class="btn btn-outline-primary d-block mb-2">' . esc_html__('View cart', 'woocommerce') . '</a>';
+function my_woocommerce_widget_shopping_cart_button_view_cart()
+{
+  echo '<a href="' . esc_url(wc_get_cart_url()) . '" class="axil-btn btn-bg-primary viewcart-btn">' . esc_html__('View cart', 'woocommerce') . '</a>';
 }
 
-function my_woocommerce_widget_shopping_cart_proceed_to_checkout() {
-  echo '<a href="' . esc_url(wc_get_checkout_url()) . '" class="btn btn-primary d-block">' . esc_html__('Checkout', 'woocommerce') . '</a>';
+function my_woocommerce_widget_shopping_cart_proceed_to_checkout()
+{
+  echo '<a href="' . esc_url(wc_get_checkout_url()) . '" class="axil-btn btn-bg-secondary checkout-btn">' . esc_html__('Checkout', 'woocommerce') . '</a>';
 }
 
 add_action('woocommerce_widget_shopping_cart_buttons', 'my_woocommerce_widget_shopping_cart_button_view_cart', 10);
